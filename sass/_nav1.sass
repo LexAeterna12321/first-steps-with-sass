@@ -1,0 +1,25 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+nav ul
+    +ul-element(row, space-around)
+    list-style: none
+    width: 100%
+    & li
+        flex-basis: 20%
+        text-align: center
+        & a
+            display: block
+            width: 100%
+            height: 100%
+            padding: 10px
+            color: $font-color
+            cursor: pointer
+            background-color: #000
+            transition: .5s
+            text-decoration: none
+            text-transform: uppercase
+            font-size: 1.2rem
+        & a:hover
+            background-color: red
